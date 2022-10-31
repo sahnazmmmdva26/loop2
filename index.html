@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Verilmiş ədədin 2 -in neçənci qüvvəti(və ya neçənci qüvvətinə yaxın) olduğunu tapın
+    var num = 10, count = 0,number=0;
+    for (var i = 2; i <=num; i*=2)
+    {
+        count++;
+        number=i;
+    }
+    if ((num - number)<=(2*number-num))
+    {
+         console.log(count);
+    }
+    else if ((num - number) > (2 * number - num))
+    {
+        count++;
+        console.log(count);
+    }
+    //Ədədin rəqəmləri cəmini tapın
+
+    var num = 123, sum = 0;
+    while (num!=0)
+    {
+        sum += (num%10);
+        num=(num/10|0);
+        
+    }
+    console.log(sum);
+
+    //Daxil olunan müsbət tam ədədin sadə və ya mürəkkəb olduğunu tapın
+    var num2=17,test=0;
+    for(var i=2;i<num2;i++)
+    {
+        if(num2%i==0)
+        {
+            test = 1;
+            break;
+        }
+    }
+    if(num2==1)
+    {
+        console.log("1 ne sadedir ne de murekkeb");
+    }
+    else if (test==1)
+    {
+        console.log("eded murekkebdir");
+
+    }
+    else if(test==0)
+    {
+        console.log("eded sadedir");
+    }
+    </script>
+</body>
+</html>
